@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import "../index.css"
 import MusicTrain from '../assets/train/musictrain.svg'
@@ -15,43 +15,42 @@ import OTile from '../assets/tiles/opencv.svg'
 
 const Hero = () => {
 	const softwareTrainRef = useRef<HTMLImageElement>(null);
- 	const projectTrainRef = useRef<HTMLImageElement>(null);
-  	const problemTrainRef = useRef<HTMLImageElement>(null);
-  	const musicTrainRef = useRef<HTMLImageElement>(null);
+	const projectTrainRef = useRef<HTMLImageElement>(null);
+	const problemTrainRef = useRef<HTMLImageElement>(null);
+	const musicTrainRef = useRef<HTMLImageElement>(null);
 
 	useEffect(() => {
 		const trainRefs = [softwareTrainRef, projectTrainRef, problemTrainRef, musicTrainRef];
-    	const trains = trainRefs.map((ref) => ref.current);
+		const trains = trainRefs.map((ref) => ref.current);
 		if (trains.length > 0) {
 			const tl = gsap.timeline({ repeat: -1 });
 		
 			// Set initial position off-screen to the left for all trains
-			gsap.set(trains[0], { x: '-150%' });
-			gsap.set(trains[1], { x: '-150%' });
-			gsap.set(trains[2], { x: '-150%' });
-			gsap.set(trains[3], { x: '-150%' });
+			gsap.set(trains[0], { x: '0%' });
+			gsap.set(trains[1], { x: '0%' });
+			gsap.set(trains[2], { x: '0%' });
+			gsap.set(trains[3], { x: '0%' });
 		
-			tl.to(trains[0], { x: '0%', duration: 4, ease: 'power0.none' })
+			tl.to(trains[0], { x: '165%', duration: 4, ease: 'power0.none' })
 				.set({}, {}, '+=2') // Pause for 2 seconds
-				.to(trains[0], { x: '150%', duration: 4, ease: 'power2.in' })
-				.set(trains[0], { x: '-150%' }) // Return the train to the initial position
-				.to(trains[1], { x: '0%', duration: 4, ease: 'power0.none' })
+				.to(trains[0], { x: '300%', duration: 4, ease: 'power2.in' })
+				.set(trains[0], { x: '0%' }) // Return the train to the initial position
+				.to(trains[1], { x: '165%', duration: 4, ease: 'power0.none' })
 				.set({}, {}, '+=2') // Pause for 2 seconds
-				.to(trains[1], { x: '150%', duration: 4, ease: 'power2.in' })
-				.set(trains[1], { x: '-150%' }) // Return the train to the initial position
-				.to(trains[2], { x: '0%', duration: 4, ease: 'power0.none' })
+				.to(trains[1], { x: '300%', duration: 4, ease: 'power2.in' })
+				.set(trains[1], { x: '0%' }) // Return the train to the initial position
+				.to(trains[2], { x: '165%', duration: 4, ease: 'power0.none' })
 				.set({}, {}, '+=2') // Pause for 2 seconds
-				.to(trains[2], { x: '150%', duration: 4, ease: 'power2.in' })
-				.set(trains[2], { x: '-150%' }) // Return the train to the initial position
-				.to(trains[3], { x: '0%', duration: 4, ease: 'power0.none' })
+				.to(trains[2], { x: '300%', duration: 4, ease: 'power2.in' })
+				.set(trains[2], { x: '0%' }) // Return the train to the initial position
+				.to(trains[3], { x: '165%', duration: 4, ease: 'power0.none' })
 				.set({}, {}, '+=2') // Pause for 2 seconds
-				.to(trains[3], { x: '150%', duration: 4, ease: 'power2.in' })
-				.set(trains[3], { x: '-150%' }); // Return the train to the initial position
+				.to(trains[3], { x: '300%', duration: 4, ease: 'power2.in' })
+				.set(trains[3], { x: '0%' }); // Return the train to the initial position
 		}
-	  }, [softwareTrainRef,projectTrainRef,problemTrainRef,musicTrainRef]);
+	}, [softwareTrainRef,projectTrainRef,problemTrainRef,musicTrainRef]);
 
-
-  	return (
+	return (
 		<div className="w-full justify-center pt-20">
 			<div className="bg-black rounded-lg w-[60%] ml-[20%] mb-4">
 				<div className="">
@@ -80,14 +79,14 @@ const Hero = () => {
 				</div>	
 			</div>
 			<div className="my-20 grid place-content-center">
-				<img ref={softwareTrainRef} id="softwareTrain" src={SoftwareTrain} className="absolute w-[60%] ml-[20%]"></img>
-				<img ref={projectTrainRef} id="projectTrain" src={ProjectTrain} className="absolute w-[60%] ml-[20%]"></img>
-				<img ref={problemTrainRef} id="problemTrain" src={ProblemTrain} className="absolute w-[60%] ml-[20%]"></img>
-				<img ref={musicTrainRef} id="musicTrain" src={MusicTrain} className="absolute w-[60%] ml-[20%]"></img>
+				<img ref={softwareTrainRef} id="softwareTrain" src={SoftwareTrain} className="absolute left-[-100%] w-[60%] ml-[20%]"></img>
+				<img ref={projectTrainRef} id="projectTrain" src={ProjectTrain} className="absolute left-[-100%] w-[60%] ml-[20%]"></img>
+				<img ref={problemTrainRef} id="problemTrain" src={ProblemTrain} className="absolute left-[-100%] w-[60%] ml-[20%]"></img>
+				<img ref={musicTrainRef} id="musicTrain" src={MusicTrain} className="absolute w-[60%] left-[-100%] ml-[20%]"></img>
 				<div className="absolute mt-14 h-[0.125rem] bg-gradient-to-r from-neutral-900 via-indigo-500 to-neutral-900 w-[95%] ml-[2.5%]"></div>
 			</div>
 		</div>
-  	);
+	);
 };
 
 export default Hero;

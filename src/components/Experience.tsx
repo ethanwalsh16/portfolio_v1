@@ -11,7 +11,7 @@ interface ExperienceProps {
 const Experience: React.FC<ExperienceProps> = ({ title, company, oneliner, colour, link, textcolour, stack }) => {
 
 	return (
-	  <div className="bg-black rounded-lg w-[80%] ml-[10%] mb-4 grid grid-cols-4 py-10">
+		<div className="bg-black rounded-lg w-[80%] ml-[10%] mb-4 grid grid-cols-4 py-10">
 		<div className="col-span-1 p-3">
 			<p className="text-neutral-300 ml-3 pt-2 text-4xl font-bold">{ title }</p>
 			<p className="text-neutral-300 italic text-sm ml-3">{ company }</p>
@@ -28,7 +28,7 @@ const Experience: React.FC<ExperienceProps> = ({ title, company, oneliner, colou
 			</a>
 		</div>
 		
-	  </div>
+		</div>
 	);
   };
   

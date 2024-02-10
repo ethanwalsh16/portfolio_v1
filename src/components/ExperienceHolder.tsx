@@ -15,15 +15,15 @@ interface ExperienceHolderProps {
 
 const ExperienceHolder: React.FC<ExperienceHolderProps> = ({ experiences }) => {
 	return (
-	  <div>
+		<div>
 			<h1 className="text-neutral-300 text-4xl font-bold ml-[10%]">Experience</h1>
 			<div className="h-[0.125rem] bg-gradient-to-r from-neutral-900 via-[#EE352E] to-neutral-900 mb-4 mt-2 w-[95%] ml-[2.5%]"></div>
 			<div className="space-y-6">
-			{experiences.map((experience, index) => (
-        		<Experience key={index} {...experience}/>
-      		))}
+				{experiences.map((experience, index) => (
+					<Experience key={index} {...experience}/>
+				))}
 			</div>
-	  </div>
+		</div>
 	);
   };
   

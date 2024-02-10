@@ -25,8 +25,7 @@ const Experience: React.FC<ProjectProps> = ({ title, description, link, colour, 
 						Route</button>
 			</a>
 		</div>
-		
-	  	</div>
+		</div>
 	);
   };
   
