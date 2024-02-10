@@ -1,0 +1,92 @@
+{
+	"navlinks": [
+		{
+			"link":"Experience",
+			"target":"experience"
+		},
+		{
+			"link":"Projects",
+			"target":"projects"
+		},
+		{
+			"link":"Resume",
+			"target":"resume"
+		},
+		{
+			"link":"Contact",
+			"target":"contact"
+		}
+	],
+	"about": [
+		{
+			"point":"Currently studying software engineering at McMaster University. In the past, I've worked for a variety of companies and institutions as an intern, ranging from education to energy."
+		},
+		{
+			"point":"My main interests when it comes to software are making music education and production more accessible, the intersection of software with the nuclear industry, and applications of transit logistics. Outside of school, I am a huge fan of sports such as golf, hockey, and skiing, music (in particular jazz), and all things related to public transit."
+		}
+	],
+	"projects": [
+		{
+			"title": "PianAI",
+			"description": "Learning the piano with MIDI feedback and OpenCV (McMaster AI Society).",
+			"link": "https://github.com/McMasterAI/pianAI",
+			"colour":"#0039A6",
+			"textcolour":"white",
+			"stack":"Python ⟶ OpenCV ⟶ MediaPipe ⟶ Streamlit"
+		},
+		{
+			"title": "Praxi",
+			"description": "Improving digital language learning with AI and live conversation.",
+			"link": "https://github.com/colinchambachan/praxi",
+			"colour":"#FCCC0A",
+			"textcolour":"black",
+			"stack":"Python ⟶ Django ⟶ HTML ⟶ TailwindCSS ⟶ Web Sockets"
+	  	},
+		{
+			"title": "Personal Portfolio",
+			"description": "Showcasing projects and experience themed after New York City subways.",
+			"link": "https://github.com/ethanwalsh16/portfolio",
+			"colour":"#EE352E",
+			"textcolour":"white",
+			"stack":"TypeScript ⟶ React.JS ⟶ TailwindCSS ⟶ GSAP"
+	  	}
+	],
+	"experiences": [
+		{
+			"title": "Project Lead",
+			"company": "McMaster Artificial Intelligence Society",
+			"oneliner": "Leading the development of an OpenCV project to teach the fundamentals of piano.",
+			"link": "https://www.linkedin.com/company/mcmasterai/",
+			"colour":"#0039A6",
+			"textcolour":"white",
+			"stack":"Python ⟶ OpenCV ⟶ MediaPipe ⟶ Streamlit"
+		},
+		{
+			"title": "Software Engineering Intern",
+			"company": "Fermi Solutions",
+			"oneliner": "Developed a full-stack application for storage management in nuclear energy facilities.",
+			"link": "https://www.fermisolutions.com/",
+			"colour":"#FCCC0A",
+			"textcolour":"black",
+			"stack":"React.JS ⟶ TypeScript ⟶ FastAPI ⟶ MongoDB ⟶ Node.JS"
+		},
+		{
+			"title": "Program Developer",
+			"company": "Nuclear Innovation Institute",
+			"oneliner": "Spearheaded the creation of a Python learning platform for thousands of students.",
+			"link": "https://www.nuclearinnovationinstitute.ca/",
+			"colour":"#EE352E",
+			"textcolour":"white",
+			"stack":"Python ⟶ Trinket.io ⟶ HTML ⟶ Wix "
+		},
+	  	{
+			"title": "Computer Science TA",
+			"company": "Saugeen District Senior School",
+			"oneliner": "Presenting games and program shells, plus meeting with students to ensure understanding.",
+			"link": "https://www.bwdsb.on.ca/",
+			"colour":"#00933C",
+			"textcolour":"white",
+			"stack":"Python ⟶ Pygame"
+	  	}
+	]
+  }
