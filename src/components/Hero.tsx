@@ -82,7 +82,7 @@ const Hero = () => {
 				<img ref={softwareTrainRef} id="softwareTrain" src={SoftwareTrain} className="absolute left-[-100%] w-[60%] ml-[20%]"></img>
 				<img ref={projectTrainRef} id="projectTrain" src={ProjectTrain} className="absolute left-[-100%] w-[60%] ml-[20%]"></img>
 				<img ref={problemTrainRef} id="problemTrain" src={ProblemTrain} className="absolute left-[-100%] w-[60%] ml-[20%]"></img>
-				<img ref={musicTrainRef} id="musicTrain" src={MusicTrain} className="absolute w-[60%] left-[-100%] ml-[20%]"></img>	
+				<img ref={musicTrainRef} id="musicTrain" src={MusicTrain} className="absolute left-[-100%] w-[60%] ml-[20%]"></img>	
 			</div>
 			<div className="mt-14 h-[0.125rem] bg-gradient-to-r from-neutral-900 via-indigo-500 to-neutral-900 w-[95%] ml-[2.5%]"></div>
 		</div>
