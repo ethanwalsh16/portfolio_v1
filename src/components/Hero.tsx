@@ -52,27 +52,27 @@ const Hero = () => {
 
 	return (
 		<div className="w-full justify-center pt-20">
-			<div className="bg-black rounded-lg w-[60%] ml-[20%] mb-4">
+			<div className="bg-black rounded-lg w-[80%] ml-[10%] md:w-[60%] md:ml-[20%] mb-4">
 				<div className="">
-					<div className="relative flex py-5 items-center">
+					<div className="relative flex md:py-5 py-2 items-center">
 						<div className="flex-grow border-t border-neutral-300"></div>
 					</div>
-					<div className="grid grid-cols-3">
-						<div className="col-span-2 ml-4">
-							<h1 className="text-neutral-300 text-7xl font-bold ml-1">Ethan Walsh</h1>
-							<h1 className="text-neutral-300 text-4xl font-bold mb-2 ml-1">Software Engineering Student</h1>
+					<div className="grid md:grid-cols-3 grid-cols-2 md:pb-0 pb-2">
+						<div className="md:col-span-2 col-span-1 md:ml-4 ml-1">
+							<h1 className="text-neutral-300 md:text-7xl text-3xl font-bold ml-1">Ethan Walsh</h1>
+							<h1 className="text-neutral-300 md:text-4xl text-xl font-bold mb-2 ml-1">Software Engineering Student</h1>
 						</div>
-						<div className="col-span-1 ml-4">
-							<div className="flex space-x-2 mb-2">
-								<img src={JTile} className="w-[3rem]" title="Java"></img>
-								<img src={PTile} className="w-[3rem]" title="Python"></img>
-								<img src={TTile} className="w-[3rem]" title="TypeScript"></img>
-								<img src={CTile} className="w-[3rem]" title="(Self-explanatory)"></img>
+						<div className="col-span-1 lg:ml-0 md:ml-0 sm:ml-4 ml-4">
+							<div className="flex md:space-x-2 space-x-1 mb-2 w-[100%]">
+								<img src={JTile} className="lg:w-[3rem] w-[2rem]" title="Java"></img>
+								<img src={PTile} className="lg:w-[3rem] w-[2rem]" title="Python"></img>
+								<img src={TTile} className="lg:w-[3rem] w-[2rem]" title="TypeScript"></img>
+								<img src={CTile} className="lg:w-[3rem] w-[2rem]" title="(Self-explanatory)"></img>
 							</div>
-							<div className="flex space-x-2">
-								<img src={MTile} className="w-[3rem]" title="MATLAB"></img>
-								<img src={RTile} className="w-[3rem]" title="React.JS"></img>
-								<img src={OTile} className="w-[3rem]" title="OpenCV"></img>
+							<div className="flex md:space-x-2 space-x-1 w-[100%]">
+								<img src={MTile} className="lg:w-[3rem] w-[2rem]" title="MATLAB"></img>
+								<img src={RTile} className="lg:w-[3rem] w-[2rem]" title="React.JS"></img>
+								<img src={OTile} className="lg:w-[3rem] w-[2rem]" title="OpenCV"></img>
 							</div>
 						</div>
 					</div>
@@ -82,9 +82,9 @@ const Hero = () => {
 				<img ref={softwareTrainRef} id="softwareTrain" src={SoftwareTrain} className="absolute left-[-100%] w-[60%] ml-[20%]"></img>
 				<img ref={projectTrainRef} id="projectTrain" src={ProjectTrain} className="absolute left-[-100%] w-[60%] ml-[20%]"></img>
 				<img ref={problemTrainRef} id="problemTrain" src={ProblemTrain} className="absolute left-[-100%] w-[60%] ml-[20%]"></img>
-				<img ref={musicTrainRef} id="musicTrain" src={MusicTrain} className="absolute w-[60%] left-[-100%] ml-[20%]"></img>
-				<div className="absolute mt-14 h-[0.125rem] bg-gradient-to-r from-neutral-900 via-indigo-500 to-neutral-900 w-[95%] ml-[2.5%]"></div>
+				<img ref={musicTrainRef} id="musicTrain" src={MusicTrain} className="absolute w-[60%] left-[-100%] ml-[20%]"></img>	
 			</div>
+			<div className="mt-14 h-[0.125rem] bg-gradient-to-r from-neutral-900 via-indigo-500 to-neutral-900 w-[95%] ml-[2.5%]"></div>
 		</div>
 	);
 };
