@@ -43,6 +43,13 @@
 			"stack":"Python ⟶ Django ⟶ HTML ⟶ TailwindCSS ⟶ Web Sockets"
 	  	},
 		{
+			"title": "Maze Solver",
+			"description": "Solving mazes in Java with graph algorithms for software design practice.",
+			"link": "https://github.com/2AA4-W24/a3-maze-runner-take-two-ethanwalsh16",
+			"colour":"#00933C",
+			"stack": "Java ⟶ JUnit ⟶ SonarQube ⟶ Software Design Patterns"
+		},
+		{
 			"title": "Personal Portfolio",
 			"description": "Showcasing projects and experience themed after New York City subways.",
 			"link": "https://github.com/ethanwalsh16/portfolio",
