@@ -47,6 +47,7 @@
 			"description": "Solving mazes in Java with graph algorithms for software design practice.",
 			"link": "https://github.com/2AA4-W24/a3-maze-runner-take-two-ethanwalsh16",
 			"colour":"#00933C",
+			"textcolour":"white",
 			"stack": "Java ⟶ JUnit ⟶ SonarQube ⟶ Software Design Patterns"
 		},
 		{
